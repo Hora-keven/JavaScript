@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+#btn{
+    padding: 4px;
+    background-color: azure;
+}
+h1{
+    margin-bottom: 10px;
+}
