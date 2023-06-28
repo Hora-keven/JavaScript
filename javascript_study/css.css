@@ -5,7 +5,7 @@
 section{
     justify-content: center;
     text-align: center;
-    width: 100%;
+   
 }
 #btn{
     padding: 4px;
@@ -14,3 +14,28 @@ section{
 h1{
     margin-bottom: 10px;
 }
+#area{
+    width:100%;
+    text-align: center;
+    justify-content: center;
+}
+#add{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+   
+}
+#mais{
+    background-color: blue;
+    width: 10%;
+    margin-left: 90%;
+}
+#menos{
+    background-color: red;
+    width: 10%;
+}
+
