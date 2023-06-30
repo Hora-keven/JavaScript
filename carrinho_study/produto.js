@@ -1,46 +1,49 @@
+let carrinho = [];
+let samsung = 0
+let motorola = 0
+let somaTotal = 0
+function Samsung() {
+    let qt = produtos.samsung.valor*produtos.samsung.quantidade++;
+    samsung=qt;
+    adicionaCarrinho(produtos.samsung.nome)
+    return samsung;
+}
 
+// function diminui() {
+//     let n = valor--;
+//     if (n == 0) {
+//         alert("Carrinho vazio");
+//     }
+// }
 
-function aumenta(){
-    
-    let n = valor++;
-    mensagemS()
+function Motorola() {
+    qt = produtos.motorola.quantidade++;
+    motorola = produtos.motorola.valor*qt;
+    adicionaCarrinho(produtos.motorola.nome)
+    return motorola;
 }
-function diminui(){
-    let n = valor--;
-    if(n==0){
-        alert('Carrinho vazio')
-    }
-    mensagemS()
-    
-}
-function aumentaM(){
-    
-    let n = valor++;
-    mensagemM()
-}
-function diminuiM(){
-    let n = valor--;
-    if(n==0){
-        alert('Carrinho vazio')
-    }
-    mensagemM()
-    
-}
-function mensagemS(){
-    valor-1
-    texto = document.querySelector('#car')
+
+// function diminuiM() {
+//     let n = valor--;
+//     if (n == 0) {
+//         alert("Carrinho vazio");
+//     }
+// }
+
+function adicionaCarrinho(produtos) {
+    texto = document.querySelector("#car");
+ 
+
+    carrinho.push(produtos);
+    somaTotal=samsung+=motorola
     texto.innerHTML = `
-    <p>Quantidade no carrinho: ${valor}
-    Total: ${valor*produtos.samsung.valor}</p>`
-    
-}
-function mensagemM(){
-    valor-1
-    texto = document.querySelector('#car')
-    texto.innerHTML = `
-    <p>Quantidade no carrinho: ${valor}
-    Total: ${valor*produtos.motorola.valor}</p>`
-    
-}
+    <p>Items no carrinho: ${carrinho}</p>
+    <p>Quantidade no carrinho: ${carrinho.length}</p>
+    <p>Total: ${somaTotal}</p>
+    <p>carrinho: ${somaTotal}</p>`;
 
-
+    corpo = document.getElementById("bodyCel")
+    corpo.style.backDropFilter = "blur"
+   
+                          
+}
