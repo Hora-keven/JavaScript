@@ -9,12 +9,17 @@ function Samsung() {
     return samsung;
 }
 
-// function diminui() {
-//     let n = valor--;
-//     if (n == 0) {
-//         alert("Carrinho vazio");
-//     }
-// }
+ function diminui() {
+    carrinho.forEach(elem => console.log(elem))
+
+    carrinho.splice(0)
+
+    if(carrinho.length ==0){
+        alert('carrinho vazio')
+    }
+   
+   
+ }
 
 function Motorola() {
     qt = produtos.motorola.quantidade++;
@@ -23,12 +28,12 @@ function Motorola() {
     return motorola;
 }
 
-// function diminuiM() {
-//     let n = valor--;
-//     if (n == 0) {
-//         alert("Carrinho vazio");
-//     }
-// }
+ function diminuiM() {
+    carrinho.forEach(function(item, indice, array){
+        console.log(item, indice)
+    })
+ }
+    
 
 function adicionaCarrinho(produtos) {
     texto = document.querySelector("#car");

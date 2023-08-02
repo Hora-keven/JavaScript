@@ -21,5 +21,4 @@ function tabuada(){
     let n1 = document.getElementById("TABUADA ").value;
     var caixaDiv = document.getElementById("caixa")
 
-    for(var contador =0; contador)
 }
